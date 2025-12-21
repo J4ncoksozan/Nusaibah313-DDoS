@@ -12,12 +12,11 @@ logo = """
 \033[0;30m═════════════════════════════════════════════════════════════════════\033[0m
 
   
-  ■■      ■   ■      ■\033[1;32m■■■■■■       ■■      ■   ■■■■            ■         ■      ■
-  ■ ■     ■   ■      ■\033[1;32m■              ■■■      ■  ■      ■        ■■■       ■      ■
-  ■   ■   ■   ■      ■\033[1;32m■■■■■■     ■■■■■    ■  ■■■■         ■■■■■      ■■■■■■
-  ■     ■ ■   ■      ■\033[1;32m        ■    ■       ■   ■  ■     ■     ■        ■     ■      ■
-  ■      ■■   ■■■■■■\033[1;32m■■■■■■   ■         ■  ■  ■■■■     ■           ■    ■      ■
- 
+\033[1;32m====    ==   ==    ==   =======       =====      ==   ======         =====       ==     ==\033[1;32m     
+\033[1;32m== ==   ==   ==    ==   ==           ==   ==     ==   ==    ==      ==   ==      ==     ==\033[1;32m
+\033[1;32m==  ==  ==   ==    ==   =======     =========    ==   ======       =========     =========\033[1;32m  
+\033[1;32m==   == ==   ==    ==        ==    ==       ==   ==   ==    ==    ==       ==    ==     ==\033[1;32m
+\033[1;32m==    ====   ========   =======   ==         ==  ==   =======    ==         ==   ==     ==\033[1;32m
 
 \033[0;30m════════════════════════════════════════════════════════════════════\033[0m
 """
@@ -131,7 +130,7 @@ class SendPOSTThread(threading.Thread):
 # check if the site stop responding and alert
 
 def main(argv):
-	parser = argparse.ArgumentParser(description='Sending unlimited amount of requests in order to perform DoS attacks. by: TweenLion')
+	parser = argparse.ArgumentParser(description='Sending unlimited amount of requests in order to perform DDOS attacks. by: Jancoksozan')
 	parser.add_argument('-g', help='Specify GET request. Usage: -g \'<url>\'')
 	parser.add_argument('-p', help='Specify POST request. Usage: -p \'<url>\'')
 	parser.add_argument('-d', help='Specify data payload for POST request', default=None)
